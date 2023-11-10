@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router' // 导入组件
+import GoodList from '@/views/goods/index.vue'
 import Index from '@/views/index.vue'
 
 const routes = [
@@ -29,6 +30,14 @@ const asyncRoutes = [
         component: Index,
         meta: {
             title: '后台首页'
+        }
+    },
+    {
+        path: '/goods/list',
+        name: '/goods/list',
+        component: GoodList,
+        meta: {
+            title: '商品管理'
         }
     }
 ]

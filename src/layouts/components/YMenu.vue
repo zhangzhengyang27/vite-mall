@@ -56,7 +56,7 @@ onBeforeRouteUpdate((to, from) => {
 const isCollapse = computed(() => store.state.isCollapse)
 
 // 侧边菜单
-const asideMenus = computed(() => store.state.menu)
+const asideMenus = computed(() => store.state.menus)
 
 // 菜单点击事件
 const handleMenuClick = (path) => {
