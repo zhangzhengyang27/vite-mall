@@ -66,7 +66,7 @@ const handleMenuClick = (path) => {
 
 <style lang="scss" scoped>
 .y-menu {
-    transition: all 0.2s;
+    // transition: all 0.2s;
     top: 64px;
     bottom: 0;
     left: 0;

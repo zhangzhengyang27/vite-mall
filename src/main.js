@@ -1,19 +1,22 @@
 import { createApp } from 'vue'
+import * as icons from '@element-plus/icons-vue'
 import ElementPlus from 'element-plus'
 import { createPinia } from 'pinia'
-import router from '@/router/index.js'
+// 全局注册指令
+import permission from '@/directives/permission.js'
+import { router } from '@/router/index.js'
+import store from './store/index.js'
 import App from './App.vue'
-import store from './store'
-// 重置样式
 import 'normalize.css/normalize.css'
 import './style.css'
 import 'element-plus/dist/index.css'
-import 'virtual:windi.css'
+import 'virtual:windi.css' // 导入组件
+// 全局注册过滤器
+import './permission'
 
 // 导入组件
 const app = createApp(App)
 
-import * as icons from '@element-plus/icons-vue'
 Object.keys(icons).forEach((key) => {
     app.component(key, icons[key])
 })
@@ -23,6 +26,8 @@ app.use(createPinia())
 app.use(ElementPlus)
 app.use(store)
 
-app.mount('#app')
+console.log(import.meta.env)
 
-// createApp(App).mount('#app')
+app.use(permission)
+
+app.mount('#app')

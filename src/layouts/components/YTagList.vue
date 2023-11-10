@@ -20,6 +20,7 @@
             </el-dropdown>
         </span>
     </div>
+    <div style="height: 44px"></div>
 </template>
 
 <script setup>
@@ -30,7 +31,7 @@ const { activeTab, tabList, changeTab, closeTab, handleClose } = useTabList()
 <style lang="scss" scoped>
 .y-tag-list {
     @apply fixed bg-gray-100 flex items-center px-2;
-    top: 64px;
+    top: 74px;
     right: 0;
     height: 44px;
     z-index: 100;

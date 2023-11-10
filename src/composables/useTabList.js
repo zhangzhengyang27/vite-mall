@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { onBeforeRouteUpdate, useRoute } from 'vue-router'
 import { useCookies } from '@vueuse/integrations/useCookies'
-import router from '@/router/index.js'
+import { router } from '@/router/index.js'
 
 export function useTabList() {
     const route = useRoute()
