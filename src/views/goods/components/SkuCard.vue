@@ -74,6 +74,6 @@ const handleChooseSku = (item) => {
 
 <style scoped lang="scss">
 .el-card__header {
-    @apply !p-2 bg-gray-50;
+    @apply p-2 bg-gray-50;
 }
 </style>

@@ -226,6 +226,7 @@ import Search from '@/components/Search.vue'
 import SearchItem from '@/components/SearchItem.vue'
 import { useInitForm, useInitTable } from '@/composables/useCommon.js'
 import { toast } from '@/composables/util'
+import Skus from '@/views/goods/skus.vue'
 import banners from './banners.vue'
 import content from './content.vue'
 
